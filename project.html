@@ -166,6 +166,7 @@
             flex-wrap: wrap;
             margin: 10px;
             display: flex;
+            
         }
 
         .product {
@@ -182,6 +183,11 @@
             flex-direction: column;
             flex-wrap: wrap;
             background-color: #FFFFFF;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover{
+            transform: translatey(-15px);
+            box-shadow: 2px 4px 4px 12px red;
         }
 
         .in {
@@ -195,6 +201,7 @@
             width: 20vw;
             display: flex;
             justify-content: center;
+            
         }
 
         .info {
@@ -295,7 +302,7 @@
         }
 
         .h {
-            margin: 1px;
+            margin: 10px;
         }
     </style>
 </head>
