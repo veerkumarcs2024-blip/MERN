@@ -105,12 +105,24 @@
 
         .cart {
             font-size: 10rem;
+            animation: float 2s alternate infinite ease-in-out;
         }
-        .click{
+
+        @keyframes float {
+            0% {
+                transform: translateY(10px);
+            }
+
+            50% {
+                transform: translateY(-50px);
+            }
+        }
+
+        .click {
             animation: myanimation;
             animation-duration: 3s;
             animation-timing-function: infinite;
-            transform: scale(1,1);
+            transform: scale(1, 1);
             transition: 3s ease-in-out;
         }
 
@@ -136,6 +148,7 @@
             align-items: center;
             gap: 4px;
             font-size: 1rem;
+
         }
 
         .box1 {
@@ -150,6 +163,11 @@
             justify-content: center;
             font-size: 3rem;
             background-color: #F1FAEE;
+            animation: rotate alternate 20s infinite ease-in-out;
+        }
+
+        .box1:hover {
+            transform: rotateY('90 angle')
         }
 
         .forth {
@@ -166,7 +184,7 @@
             flex-wrap: wrap;
             margin: 10px;
             display: flex;
-            
+
         }
 
         .product {
@@ -185,9 +203,10 @@
             background-color: #FFFFFF;
             transition: transform 0.3s ease-in-out;
         }
-        .product:hover{
+
+        .product:hover {
             transform: translatey(-15px);
-            box-shadow: 2px 4px 4px 12px red;
+            box-shadow: 2px 4px 12px red;
         }
 
         .in {
@@ -201,7 +220,7 @@
             width: 20vw;
             display: flex;
             justify-content: center;
-            
+
         }
 
         .info {
@@ -253,8 +272,10 @@
                 grid-area: searchBar;
                 width: 95%;
             }
-            .navbar .search{
+
+            .navbar .search {
                 width: 300px;
+                height: 40px;
             }
 
             .second {
@@ -263,7 +284,7 @@
                 width: 90vw;
                 margin-left: 20px;
             }
-            
+
             .second .info {
                 text-wrap: wrap;
 
@@ -271,7 +292,7 @@
 
             .second .cart {
                 font-size: 5rem;
-                
+
             }
 
             .third .box1 {
@@ -282,18 +303,28 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .forth {
                 margin: 2px;
             }
-            .forth .in{
+
+            .forth .in {
                 height: 20vh;
                 width: 30vw;
                 margin: 1px;
             }
-            .forth .product{
+
+            .forth .product {
                 width: 150px;
+                transition: transform 3s ease-in-out;
+            }
+
+            .product:hover {
+                transform: translatey(-15px);
+                box-shadow: 2px 4px 12px rgb(12, 139, 236);
             }
         }
+
 
         .why {
             margin: 4%;
@@ -318,7 +349,7 @@
         <div class="side">
             <h3> Home</h3>
             <h3> Product</h3>
-            <h3> Cart</h3>
+            <h3> Cart🛒</h3>
         </div>
     </div>
     <div class="second">
