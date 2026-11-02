@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        border: 2px solid greenyellow;
+        height: 90vh;
+        width: 90vw;
+        padding: 30px;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: "head1 head2""main main""foot1 foot2";
+    }
+
+    .head1 { 
+        grid-area: head1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px solid red;
+    }
+    .head2 { 
+        grid-area: head2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+        border: 1px solid black;
+    }
+    .main  {
+        grid-area: main;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border: 1px solid brown;
+    }
+    .footer1 {
+        grid-area: foot1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border: 1px solid palevioletred;
+    }
+    .footer2 { 
+        grid-area: foot2;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        border: 1px solid purple;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="head1"></div>
+        <div class="head2"></div>
+        <div class="main"></div>
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+    </div>    
+</body>
+</html>

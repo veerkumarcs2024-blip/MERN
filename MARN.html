@@ -1,0 +1,471 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navbar {
+            border: 2px solid #1B4332;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #2D6A4F;
+            display: flex;
+            position: fixed;
+            background: linear-gradient(to right, #D8F3DC, #95D5B2);
+            align-items: center;
+            height: 8vh;
+            width: 99vw;
+            top: 0;
+            width: 100%;
+            color: #1B4332;
+            padding: 2px;
+        }
+
+        .text {
+            flex-wrap: wrap;
+            margin: 20px;
+            border-radius: 10px;
+
+        }
+
+        .search {
+            width: 76%;
+            height: 120%;
+            border-radius: 15px;
+        }
+
+        .side {
+            display: flex;
+            gap: 10%;
+            margin: 10px;
+
+        }
+        .side h3{
+            display: flex;
+        }
+
+        .second {
+            border: 2px solid #B7E4C7;
+            background: linear-gradient(to top, #D8F3DC, #95D5B2);
+            border-radius: 20px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            display: flex;
+            margin-left: 10%;
+            margin-right: 10%;
+            align-items: center;
+            justify-content: center;
+            height: 30vh;
+            width: 80vw;
+            margin-top: 10vh;
+            background-color: #F8FFF9;
+        }
+
+        .info {
+            margin: 2%;
+        }
+
+        .click {
+            border: 1px solid #D97706;
+            height: 5vh;
+            width: 10vw;
+            border-radius: 10px;
+            background: linear-gradient(to right, #F4A261, #E76F51);
+            color: #FFFFFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .shop {
+            border: 2px solid #D8E2D5;
+            flex-wrap: wrap;
+            display: flex;
+            min-height: 19vh;
+            margin: 5px;
+            border-radius: 10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #FFFFFF;
+        }
+
+        .cart {
+            font-size: 10rem;
+        }
+
+        .by {
+            height: 2vh;
+            margin: 2px;
+            width: 100vw;
+        }
+
+        .xo {
+            flex-wrap: wrap;
+            display: flex;
+            margin-left: 15px;
+            margin-bottom: 5px;
+            min-height: 12vh;
+            width: 93vw;
+            gap: 8px;
+        }
+
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            font-size: 1rem;
+            color: #344E41;
+        }
+
+        .box1 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            margin-left: 15px;
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #F1FAEE;
+        }
+
+        .box2 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            height: 9vh;
+            margin-left: 15px;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #FFF3E0;
+        }
+
+        .box3 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            margin-left: 15px;
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #F1FAEE;
+        }
+
+        .box4 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            margin-left: 15px;
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #EAF4F4;
+        }
+
+        .box5 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            margin-left: 15px;
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #FFF3E0;
+        }
+
+        .box6 {
+            border: 2px solid #B7C9B2;
+            margin: 2px;
+            margin-left: 15px;
+            height: 9vh;
+            width: 5vw;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            background-color: #EAF4F4;
+        }
+
+        .forth {
+            flex-wrap: wrap;
+            display: flex;
+            height: inherit;
+            flex-direction: column;
+            margin: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .iteam {
+            flex-wrap: wrap;
+            margin: 20px;
+            display: flex;
+        }
+
+        .product {
+            border: 2px solid #D8E2D5;
+            flex-wrap: wrap;
+            display: flex;
+            height: 250px;
+            align-items: center;
+            width: 180px;
+            flex-direction: column;
+            margin: 10px;
+            border-radius: 10px;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            background-color: #FFFFFF;
+        }
+
+        .in {
+            font-size: 5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #F1FAEE;
+            display: flex;
+            border-radius: 10px;
+            height: 20vh;
+            width: 10vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        .info {
+            align-items: center;
+            font-weight: bold;
+            color: #2D6A4F;
+        }
+
+        .bu {
+            color: #FFFFFF;
+            background-color: #2D6A4F;
+            border: 1px solid #1B4332;
+            border-radius: 8px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        .tag {
+            border: #B45309 solid 2px;
+            background-color: #F4A261;
+            border-radius: 2px;
+            color: #FFFFFF;
+            position: absolute;
+            right: 0px;
+        }
+
+        .go {
+            position: relative;
+        }
+        @media(max-width: 700px) {
+            .navbar {
+                display: grid;
+                grid-template-areas: "logo navItems"
+                                    "searchBar searchBar";
+
+                height: 100px;
+            }
+            .navbar .logo{
+                grid-area: logo;
+            }
+            .navbar .side{
+                grid-area: navItems;
+            }
+            .navbar .text{
+                grid-area: searchBar;
+                width: 95%;
+            }
+
+            .second{
+                .info{
+
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><h2>HomeMart</stdio.h></h2></div>
+        <div class="text">
+            <input type="text" class="search" placeholder=" 🔍 Search fruits, Vegitables....." width="10%" height="10%">
+        </div>
+        <div class="side">
+            <h3> Home</h3>
+            <h3> Product</h3>
+            <h3> Cart</h3>
+        </div>
+    </div>
+    <div class="second">
+        <div class="info">
+            <h1>Fresh groceries
+                delivered to you
+            </h1>
+            <p>fruits, Vegitables and daily essentials delivered fresh</p>
+            <button class="click">Shop Now</button>
+        </div>
+        <div class="cart">🛒</div>
+    </div>
+    <div class="third">
+        <div class="shop">
+            <div class="by">
+                <h>Shop by Category</h1>
+            </div>
+            <div class="xo">
+                <div class="category">
+                    <div class="box1">🍅</div><span>Vegitables</span>
+                </div>
+                <div class="category">
+                    <div class="box2">🍞</div><span>bakery</span>
+                </div>
+                <div class="category">
+                    <div class="box3">🍎</div><span>Fruits</span>
+                </div>
+                <div class="category">
+                    <div class="box4">🥛</div><span>Dairy</span>
+                </div>
+                <div class="category">
+                    <div class="box5">🥚</div><span>Egg</span>
+                </div>
+                <div class="category">
+                    <div class="box6">🥤</div><span>Drinks</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forth">
+        <div>
+            <h1>Popular Product</h1>
+        </div>
+        <div class="iteam">
+            <div class="product">
+                <div class="go">
+                    <span class="tag">Best seller</span>
+                    <div class="in">🍅 </div>
+                </div>
+                <div class="info">
+                    <span>Freash apple<br>
+                        ₹150 / Kg
+                    </span><br>
+                    <button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="go">
+                    <span class="tag">10% OFF</span>
+                    <div class="in">🥕</div>
+                </div>
+                <div class="info">
+                    <span>Freash Carrot<br>₹40 / Kg</span><br>
+                    <button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🫑</div>
+                </div>
+                <div class="info">
+                    <span>Freash Capsicum<br>₹60 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🥒</div>
+                </div>
+                <div class="info">
+                    <span>Freash Cucumber<br>₹30 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🥬</div>
+                </div>
+                <div class="info">
+                    <span>Freash Cabbage<br>₹30 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🍆</div>
+                </div>
+                <div class="info">
+                    <span>Freash apple<br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="go">
+                    <span class="tag">SALE</span>
+                    <div class="in">🍞</div>
+                </div>
+                <div class="info">
+                    <span>Freash bread<br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🧄</div>
+                </div>
+                <div class="info">
+                    <span>Freash Garlic bulb<br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="go">
+                    <span class="tag">90 % OFF</span>
+                    <div class="in">🥝</div>
+                </div>
+                <div class="info">
+                    <span>Freash kiwi <br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🫐</div>
+                </div>
+                <div class="info">
+                    <span>Freash Blueberries<br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="">
+                    <div class="in">🌽</div>
+                </div>
+                <div class="info">
+                    <span>Freash Corn<br>₹70 / Kg</span><br><button class="bu"> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</body>
+
+</html>
+```

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
         }
+
         .navbar {
             border: 2px solid #1B4332;
             flex-direction: column;
@@ -31,25 +32,24 @@
 
         .text {
             flex-wrap: wrap;
-            margin: 20px;
-            width: 65%;
+            margin: 8px;
             border-radius: 10px;
 
         }
 
         .search {
-            width: 76%;
+            width: 150%;
             height: 120%;
             border-radius: 15px;
         }
 
         .side {
             display: flex;
+            margin-left: 1px;
             gap: 10%;
-            margin: 10px;
-
         }
-        .side h3{
+
+        .side h3 {
             display: flex;
         }
 
@@ -60,19 +60,24 @@
             flex-direction: column;
             flex-wrap: wrap;
             display: flex;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin-left: 8%;
+            margin-right: 8%;
             align-items: center;
             justify-content: center;
             height: 30vh;
             width: 80vw;
-            margin-top: 10vh;
+            margin-top: 9vh;
             background-color: #F8FFF9;
-            
+
         }
 
         .info {
             margin: 2%;
+        }
+
+        .sub {
+            flex-direction: row;
+            display: flex;
         }
 
         .click {
@@ -100,6 +105,13 @@
 
         .cart {
             font-size: 10rem;
+        }
+        .click{
+            animation: myanimation;
+            animation-duration: 3s;
+            animation-timing-function: infinite;
+            
+            transition: 3s ease-in-out;
         }
 
         .by {
@@ -131,83 +143,13 @@
             margin: 2px;
             margin-left: 15px;
             height: 9vh;
-            width: 5vw;
+            width: 8vw;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 3rem;
             background-color: #F1FAEE;
-        }
-
-        .box2 {
-            border: 2px solid #B7C9B2;
-            margin: 2px;
-            height: 9vh;
-            margin-left: 15px;
-            width: 5vw;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            background-color: #FFF3E0;
-        }
-
-        .box3 {
-            border: 2px solid #B7C9B2;
-            margin: 2px;
-            margin-left: 15px;
-            height: 9vh;
-            width: 5vw;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            background-color: #F1FAEE;
-        }
-
-        .box4 {
-            border: 2px solid #B7C9B2;
-            margin: 2px;
-            margin-left: 15px;
-            height: 9vh;
-            width: 5vw;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            background-color: #EAF4F4;
-        }
-
-        .box5 {
-            border: 2px solid #B7C9B2;
-            margin: 2px;
-            margin-left: 15px;
-            height: 9vh;
-            width: 5vw;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            background-color: #FFF3E0;
-        }
-
-        .box6 {
-            border: 2px solid #B7C9B2;
-            margin: 2px;
-            margin-left: 15px;
-            height: 9vh;
-            width: 5vw;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            background-color: #EAF4F4;
         }
 
         .forth {
@@ -215,14 +157,14 @@
             display: flex;
             height: inherit;
             flex-direction: column;
-            margin: 5px;
+            margin: 10px;
             display: flex;
             flex-wrap: wrap;
         }
 
         .iteam {
             flex-wrap: wrap;
-            margin: 20px;
+            margin: 10px;
             display: flex;
         }
 
@@ -250,7 +192,7 @@
             display: flex;
             border-radius: 10px;
             height: 20vh;
-            width: 10vw;
+            width: 20vw;
             display: flex;
             justify-content: center;
         }
@@ -282,33 +224,89 @@
         .go {
             position: relative;
         }
+
         @media(max-width: 700px) {
             .navbar {
                 display: grid;
                 grid-template-areas: "logo navItems"
-                                    "searchBar searchBar";
+                    "searchBar searchBar";
 
                 height: 100px;
             }
-            .navbar .logo{
+
+            .navbar .logo {
                 grid-area: logo;
             }
-            .navbar .side{
+
+            .navbar .side {
                 grid-area: navItems;
             }
-            .navbar .text{
+
+            .navbar .text {
                 grid-area: searchBar;
                 width: 95%;
             }
+            .navbar .search{
+                width: 300px;
+            }
+
+            .second {
+                margin-top: 28%;
+                height: 35vh;
+                width: 90vw;
+                margin-left: 20px;
+            }
+            
+            .second .info {
+                text-wrap: wrap;
+
+            }
+
+            .second .cart {
+                font-size: 5rem;
+                
+            }
+
+            .third .box1 {
+                align-items: center;
+                display: flex;
+                height: 10vh;
+                width: 20vw;
+                justify-content: center;
+                align-items: center;
+            }
+            .forth {
+                margin: 2px;
+            }
+            .forth .in{
+                height: 20vh;
+                width: 30vw;
+                margin: 1px;
+            }
+            .forth .product{
+                width: 150px;
+            }
+        }
+
+        .why {
+            margin: 4%;
+            border: 2px solid red;
+            border-radius: 10px;
+        }
+
+        .h {
+            margin: 1px;
         }
     </style>
 </head>
 
 <body>
     <div class="navbar">
-        <div class="logo"><h2>HomeMart</stdio.h></h2></div>
+        <div class="logo">
+            <h2>HomeMart</h2>
+        </div>
         <div class="text">
-            <input type="text" class="search" placeholder=" 🔍 Search fruits, Vegitables....." width="10%" height="10%">
+            <input type="text" class="search" placeholder=" 🔍 Search fruits, Vegitables....." height="10%">
         </div>
         <div class="side">
             <h3> Home</h3>
@@ -317,14 +315,16 @@
         </div>
     </div>
     <div class="second">
-        <div class="info">
-            <h1>Fresh groceries
-                delivered to you
-            </h1>
-            <p>fruits, Vegitables and daily essentials delivered fresh</p>
-            <button class="click">Shop Now</button>
+        <div class="sub">
+            <div class="info">
+                <h1>Fresh groceries
+                    delivered
+                </h1>
+                <p>fruits, Vegitables and daily essentials delivered fresh</p><br>
+                <button class="click">Shop Now</button>
+            </div>
+            <div class="cart">🛒</div>
         </div>
-        <div class="cart">🛒</div>
     </div>
     <div class="third">
         <div class="shop">
@@ -336,19 +336,19 @@
                     <div class="box1">🍅</div><span>Vegitables</span>
                 </div>
                 <div class="category">
-                    <div class="box2">🍞</div><span>bakery</span>
+                    <div class="box1">🍞</div><span>bakery</span>
                 </div>
                 <div class="category">
-                    <div class="box3">🍎</div><span>Fruits</span>
+                    <div class="box1">🍎</div><span>Fruits</span>
                 </div>
                 <div class="category">
-                    <div class="box4">🥛</div><span>Dairy</span>
+                    <div class="box1">🥛</div><span>Dairy</span>
                 </div>
                 <div class="category">
-                    <div class="box5">🥚</div><span>Egg</span>
+                    <div class="box1">🥚</div><span>Egg</span>
                 </div>
                 <div class="category">
-                    <div class="box6">🥤</div><span>Drinks</span>
+                    <div class="box1">🥤</div><span>Drinks</span>
                 </div>
             </div>
         </div>
@@ -458,8 +458,13 @@
 
 
     </div>
+    <div class="why">
+        <div class="h">
+            <h1>Why HomeMart</h1><br>
+            <p>HomeMart brings fresh, Vegitables and everyday groceries directly to your doorstep.<br>
+                we Work with local suppliers to provide fresh products at affordable price.<br>
+                Scroll the page and observe what happend to the navbar and category section.</p>
+        </div>
 
     </div>
 </body>
-
-</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div{
+        background-color: rgb(9, 9, 211);
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 10px;
+    }
+    
+    .small{
+        display: flex;
+        margin: 10px;
+        height: 20vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid rgb(222, 1, 1);
+    }
+    .medium{
+        display: flex;
+        margin: 10px;
+        height: 40vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid rgb(38, 208, 8);
+    }
+    .large{
+        display: flex;
+        margin: 10px;
+        height: 4vh;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 2px solid rgb(149, 8, 128);
+    }
+    .box1{
+        background-color: rgb(255, 0, 0);
+        height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        width: 20vh;
+        margin: 10px;
+    }
+    .box2{
+        background-color: rgb(0, 255, 0);
+        height: 10vh;
+        width: 20vh;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .box3{
+        background-color: rgb(10, 231, 231);
+        height: 10vh;
+        width: 20vh;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .box4{
+        background-color: rgb(255, 255, 0);
+        height: 10vh;
+        width: 20vh;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .box5{
+        background-color: rgb(255, 0, 255);
+        height: 10vh;
+        width: 20vh;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div>
+        <div class="small" >
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+        <div class="medium">
+            <div class="box3"></div>
+            <div class="box4"></div>
+            <div class="box5"></div>
+        </div>
+        <div class="large"></div>
+    </div>
+</body>
+</html>
